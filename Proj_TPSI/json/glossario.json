@@ -1,0 +1,113 @@
+{
+  "title": "Glossario delle Socket",
+  "author": "Buoso Mattia",
+  "class": "5E",
+  "year": 2024,
+  "navbar": {
+    "brand": "SOCKET.",
+    "links": [
+      {
+        "name": "Cos'è una Socket?",
+        "url": "index.html",
+        "icon": "help-circle",
+        "active": false
+      },
+      {
+        "name": "OSI",
+        "url": "osi.html",
+        "icon": "desktop",
+        "active": false
+      },
+      {
+        "name": "TCP vs UDP",
+        "url": "tcp.html",
+        "icon": "extension-puzzle",
+        "active": false
+      },
+      {
+        "name": "Glossario",
+        "url": "#",
+        "icon": "book",
+        "active": true
+      }
+    ]
+  },
+  "content": {
+    "header": {
+      "title": "Glossario delle Socket",
+      "description": "Scopri i termini e i concetti chiave legati alla programmazione delle socket e alla comunicazione di rete."
+    },
+    "terms": [
+      {
+        "term": "Socket",
+        "definition": "Un'interfaccia di programmazione che consente la comunicazione tra dispositivi su una rete, utilizzata in molti ambiti come applicazioni client-server."
+      },
+      {
+        "term": "Client",
+        "definition": "Un'applicazione che avvia una connessione con un server per richiedere informazioni o servizi. Ad esempio, un browser web agisce da client quando si connette a un server web."
+      },
+      {
+        "term": "Server",
+        "definition": "Un'applicazione o un dispositivo che fornisce servizi o risorse a un client su una rete. Il server ascolta sulle socket e risponde alle richieste provenienti dai client."
+      },
+      {
+        "term": "TCP (Transmission Control Protocol)",
+        "definition": "Un protocollo di comunicazione che garantisce l'affidabilità nella trasmissione dei dati. TCP stabilisce una connessione tra client e server e assicura che i pacchetti vengano ricevuti nell'ordine corretto senza perdita di dati."
+      },
+      {
+        "term": "UDP (User Datagram Protocol)",
+        "definition": "Un protocollo di comunicazione che permette la trasmissione di pacchetti di dati senza garantire l'affidabilità o l'ordine. UDP è più veloce di TCP ma meno sicuro, ed è utilizzato in applicazioni in cui la velocità è più importante della precisione, come lo streaming video."
+      },
+      {
+        "term": "Indirizzo IP",
+        "definition": "Un identificatore numerico unico per ogni dispositivo in una rete. Gli indirizzi IP possono essere statici (fissi) o dinamici (assegnati automaticamente da un server DHCP)."
+      },
+      {
+        "term": "Porta (Port Number)",
+        "definition": "Un numero che identifica una specifica applicazione su un dispositivo. Le porte vanno da 0 a 65535 e sono utilizzate per indirizzare il traffico di rete alle giuste applicazioni (ad esempio, la porta 80 per HTTP, la porta 443 per HTTPS)."
+      },
+      {
+        "term": "Modello OSI",
+        "definition": "Un modello di riferimento che descrive come i dati viaggiano attraverso una rete. Il modello OSI è composto da sette livelli, e le socket operano tipicamente al livello di trasporto (Livello 4), che gestisce la comunicazione tra host."
+      },
+      {
+        "term": "Stream Socket",
+        "definition": "Un tipo di socket che utilizza TCP per garantire la consegna dei dati in modo ordinato e affidabile. Viene utilizzato per applicazioni che richiedono una connessione stabile, come il trasferimento di file o le comunicazioni web."
+      },
+      {
+        "term": "Datagram Socket",
+        "definition": "Un tipo di socket che utilizza UDP per inviare pacchetti di dati senza stabilire una connessione. È utile per applicazioni che necessitano di velocità, ma che possono tollerare la perdita di pacchetti, come la trasmissione in tempo reale di audio e video."
+      },
+      {
+        "term": "Binding",
+        "definition": "Il processo di associazione di una socket con un indirizzo IP e una porta. Questo permette a un'applicazione di ricevere dati da una rete su una porta specifica."
+      },
+      {
+        "term": "Ascolto (Listening)",
+        "definition": "Quando un server 'ascolta' su una socket, significa che è pronto a ricevere richieste di connessione da parte di un client. Il server accetta connessioni su una specifica porta."
+      },
+      {
+        "term": "Connessione (Connection)",
+        "definition": "Il processo mediante il quale un client e un server stabiliscono un canale di comunicazione attraverso una socket. Una volta stabilita, i dati possono essere trasmessi in entrambe le direzioni."
+      },
+      {
+        "term": "Protocollo di Trasporto",
+        "definition": "Il livello del modello OSI che si occupa della trasmissione dei dati tra i dispositivi. I due principali protocolli di trasporto sono TCP e UDP."
+      }
+    ]
+  },
+  "footer": {
+    "text": "&copy; 2024 - Buoso Mattia - 5E"
+  },
+  "meta": {
+    "description": "Glossario delle Socket",
+    "og": {
+      "title": "Glossario delle Socket",
+      "type": "website",
+      "url": "#",
+      "image": "#",
+      "image_alt": "Glossario Socket"
+    },
+    "theme_color": "#fafafa"
+  }
+}

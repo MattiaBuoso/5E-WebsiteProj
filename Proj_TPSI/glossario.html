@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossario delle Socket</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="description" content="Glossario delle Socket">
+
+  <meta property="og:title" content="Glossario delle Socket">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:image:alt" content="Glossario Socket">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">SOCKET.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="index.html">Cos'è una Socket? <ion-icon name="help-circle"></ion-icon></a>
+        <a class="nav-link" href="osi.html">OSI <ion-icon name="desktop"></ion-icon></a>
+        <a class="nav-link" href="tcp.html">TCP vs UDP <ion-icon name="extension-puzzle"></ion-icon></a>
+        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Glossario <ion-icon name="book"></ion-icon></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Glossario -->
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Glossario delle Socket</h1>
+  <p class="lead text-center">Scopri i termini e i concetti chiave legati alla programmazione delle socket e alla comunicazione di rete.</p>
+
+  <!-- Termini del glossario -->
+  <dl class="row">
+    <dt class="col-sm-3">Socket</dt>
+    <dd class="col-sm-9">Un'interfaccia di programmazione che consente la comunicazione tra dispositivi su una rete, utilizzata in molti ambiti come applicazioni client-server.</dd>
+
+    <dt class="col-sm-3">Client</dt>
+    <dd class="col-sm-9">Un'applicazione che avvia una connessione con un server per richiedere informazioni o servizi. Ad esempio, un browser web agisce da client quando si connette a un server web.</dd>
+
+    <dt class="col-sm-3">Server</dt>
+    <dd class="col-sm-9">Un'applicazione o un dispositivo che fornisce servizi o risorse a un client su una rete. Il server ascolta sulle socket e risponde alle richieste provenienti dai client.</dd>
+
+    <dt class="col-sm-3">TCP (Transmission Control Protocol)</dt>
+    <dd class="col-sm-9">Un protocollo di comunicazione che garantisce l'affidabilità nella trasmissione dei dati. TCP stabilisce una connessione tra client e server e assicura che i pacchetti vengano ricevuti nell'ordine corretto senza perdita di dati.</dd>
+
+    <dt class="col-sm-3">UDP (User Datagram Protocol)</dt>
+    <dd class="col-sm-9">Un protocollo di comunicazione che permette la trasmissione di pacchetti di dati senza garantire l'affidabilità o l'ordine. UDP è più veloce di TCP ma meno sicuro, ed è utilizzato in applicazioni in cui la velocità è più importante della precisione, come lo streaming video.</dd>
+
+    <dt class="col-sm-3">Indirizzo IP</dt>
+    <dd class="col-sm-9">Un identificatore numerico unico per ogni dispositivo in una rete. Gli indirizzi IP possono essere statici (fissi) o dinamici (assegnati automaticamente da un server DHCP).</dd>
+
+    <dt class="col-sm-3">Porta (Port Number)</dt>
+    <dd class="col-sm-9">Un numero che identifica una specifica applicazione su un dispositivo. Le porte vanno da 0 a 65535 e sono utilizzate per indirizzare il traffico di rete alle giuste applicazioni (ad esempio, la porta 80 per HTTP, la porta 443 per HTTPS).</dd>
+
+    <dt class="col-sm-3">Modello OSI</dt>
+    <dd class="col-sm-9">Un modello di riferimento che descrive come i dati viaggiano attraverso una rete. Il modello OSI è composto da sette livelli, e le socket operano tipicamente al livello di trasporto (Livello 4), che gestisce la comunicazione tra host.</dd>
+
+    <dt class="col-sm-3">Stream Socket</dt>
+    <dd class="col-sm-9">Un tipo di socket che utilizza TCP per garantire la consegna dei dati in modo ordinato e affidabile. Viene utilizzato per applicazioni che richiedono una connessione stabile, come il trasferimento di file o le comunicazioni web.</dd>
+
+    <dt class="col-sm-3">Datagram Socket</dt>
+    <dd class="col-sm-9">Un tipo di socket che utilizza UDP per inviare pacchetti di dati senza stabilire una connessione. È utile per applicazioni che necessitano di velocità, ma che possono tollerare la perdita di pacchetti, come la trasmissione in tempo reale di audio e video.</dd>
+
+    <dt class="col-sm-3">Binding</dt>
+    <dd class="col-sm-9">Il processo di associazione di una socket con un indirizzo IP e una porta. Questo permette a un'applicazione di ricevere dati da una rete su una porta specifica.</dd>
+
+    <dt class="col-sm-3">Ascolto (Listening)</dt>
+    <dd class="col-sm-9">Quando un server "ascolta" su una socket, significa che è pronto a ricevere richieste di connessione da parte di un client. Il server accetta connessioni su una specifica porta.</dd>
+
+    <dt class="col-sm-3">Connessione (Connection)</dt>
+    <dd class="col-sm-9">Il processo mediante il quale un client e un server stabiliscono un canale di comunicazione attraverso una socket. Una volta stabilita, i dati possono essere trasmessi in entrambe le direzioni.</dd>
+
+    <dt class="col-sm-3">Protocollo di Trasporto</dt>
+    <dd class="col-sm-9">Il livello del modello OSI che si occupa della trasmissione dei dati tra i dispositivi. I due principali protocolli di trasporto sono TCP e UDP.</dd>
+  </dl>
+
+</div>
+
+<!-- Footer -->
+<footer class="mt-5 text-center">
+  <p>&copy; 2024 - Buoso Mattia - 5E</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

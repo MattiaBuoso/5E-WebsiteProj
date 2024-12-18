@@ -1,0 +1,92 @@
+{
+  "title": "TCP vs UDP - Socket",
+  "author": "Buoso Mattia",
+  "class": "5E",
+  "year": 2024,
+  "navbar": {
+    "brand": "SOCKET.",
+    "links": [
+      {
+        "name": "Cos'è una Socket?",
+        "url": "index.html",
+        "icon": "help-circle",
+        "active": false
+      },
+      {
+        "name": "OSI",
+        "url": "osi.html",
+        "icon": "desktop",
+        "active": false
+      },
+      {
+        "name": "TCP vs UDP",
+        "url": "#",
+        "icon": "extension-puzzle",
+        "active": true
+      },
+      {
+        "name": "Glossario",
+        "url": "glossario.html",
+        "icon": "book",
+        "active": false
+      }
+    ]
+  },
+  "content": {
+    "sections": [
+      {
+        "title": "Cos'è TCP?",
+        "description": "TCP è un protocollo orientato alla connessione che garantisce la trasmissione affidabile dei dati.",
+        "features": [
+          "Rilevamento e correzione degli errori tramite checksum e ritrasmissione.",
+          "Stabilisce una connessione tramite un handshake a tre fasi (SYN, SYN-ACK, ACK).",
+          "Utilizzato per applicazioni critiche come email, trasferimenti file, e navigazione web."
+        ],
+        "image": {
+          "src": "img/fig7-modificata-1.jpg",
+          "alt": "Schema del funzionamento TCP"
+        }
+      },
+      {
+        "title": "Cos'è UDP?",
+        "description": "UDP è un protocollo senza connessione che offre una trasmissione rapida e leggera, senza garantire la consegna o l'ordine dei dati.",
+        "features": [
+          "Non richiede una connessione stabilita tra mittente e destinatario.",
+          "Supporta il multicast e il broadcast, utile per streaming e giochi online.",
+          "Adatto a comunicazioni sensibili al tempo, come VoIP e conferenze video."
+        ],
+        "image": {
+          "src": "img/udp.png",
+          "alt": "Schema del funzionamento UDP"
+        }
+      },
+      {
+        "title": "Principali differenze",
+        "description": "Tabella comparativa delle principali differenze tra TCP e UDP.",
+        "table": {
+          "headers": ["Caratteristica", "TCP", "UDP"],
+          "rows": [
+            { "Caratteristica": "Connessione", "TCP": "Orientato alla connessione", "UDP": "Senza connessione" },
+            { "Caratteristica": "Affidabilità", "TCP": "Garantisce consegna e ordine", "UDP": "Nessuna garanzia" },
+            { "Caratteristica": "Velocità", "TCP": "Più lento per l'overhead", "UDP": "Più veloce" },
+            { "Caratteristica": "Applicazioni", "TCP": "Email, trasferimento file", "UDP": "Streaming, giochi online" }
+          ]
+        }
+      }
+    ]
+  },
+  "footer": {
+    "text": "&copy; 2024 - Buoso Mattia - 5E"
+  },
+  "meta": {
+    "description": "Confronto tra TCP e UDP nelle comunicazioni di rete.",
+    "og": {
+      "title": "TCP vs UDP - Socket",
+      "type": "website",
+      "url": "https://img/fig7-modificata-1.jpg",
+      "image": "https://img/udp.png",
+      "image_alt": "TCP vs UDP overview"
+    },
+    "theme_color": "#343a40"
+  }
+}

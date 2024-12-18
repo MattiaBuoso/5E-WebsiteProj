@@ -1,0 +1,72 @@
+{
+  "title": "Socket e il Modello ISO/OSI",
+  "author": "Buoso Mattia",
+  "class": "5E",
+  "year": 2024,
+  "navbar": {
+    "brand": "SOCKET.",
+    "links": [
+      {
+        "name": "Cos'è una Socket?",
+        "url": "index.html",
+        "active": false
+      },
+      {
+        "name": "OSI",
+        "url": "osi.html",
+        "active": true
+      },
+      {
+        "name": "TCP vs UDP",
+        "url": "tcp.html",
+        "active": false
+      },
+      {
+        "name": "Glossario",
+        "url": "glossario.html",
+        "active": false
+      }
+    ]
+  },
+  "content": {
+    "sections": [
+      {
+        "title": "Il Modello ISO/OSI",
+        "description": "Una descrizione dei sette livelli del modello ISO/OSI.",
+        "levels": [
+          { "level": 1, "name": "Fisico", "details": "Trasmissione di segnali grezzi attraverso i media." },
+          { "level": 2, "name": "Collegamento dati", "details": "Controllo degli errori e gestione dei frame." },
+          { "level": 3, "name": "Rete", "details": "Instradamento dei dati (es. IP)." },
+          { "level": 4, "name": "Trasporto", "details": "Garantisce una comunicazione affidabile (es. TCP/UDP)." },
+          { "level": 5, "name": "Sessione", "details": "Gestione delle connessioni tra applicazioni." },
+          { "level": 6, "name": "Presentazione", "details": "Formattazione e crittografia dei dati." },
+          { "level": 7, "name": "Applicazione", "details": "Interfaccia utente e protocolli (es. HTTP, FTP)." }
+        ],
+        "image": {
+          "src": "img/Osi-model_italia-2356114862.png",
+          "alt": "Schema del Modello OSI"
+        }
+      },
+      {
+        "title": "Socket e il Modello OSI",
+        "description": "Illustrazione di come le socket si interfacciano con il modello ISO/OSI.",
+        "details": [
+          "Le socket operano principalmente al livello 4 (Trasporto).",
+          "Interfacciamento con i protocolli TCP e UDP.",
+          "Supporto per connessioni client-server e peer-to-peer."
+        ],
+        "applications": [
+          "Web browsing",
+          "Posta elettronica"
+        ],
+        "image": {
+          "src": "img/stream-socket-connessione-1867055202.png",
+          "alt": "Schema del funzionamento delle Socket"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "text": "&copy; 2024 - Buoso Mattia - 5E"
+  }
+}

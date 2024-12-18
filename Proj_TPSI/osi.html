@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Socket e il Modello ISO/OSI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">SOCKET.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Cos'è una Socket?</a>
+        <a class="nav-link active" href="osi.html">OSI</a>
+        <a class="nav-link" href="tcp.html">TCP vs UDP</a>
+        <a class="nav-link" href="glossario.html">Glossario</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenuto principale -->
+<div class="container mt-5">
+  <h1 class="mb-4">Socket e il Modello ISO/OSI</h1>
+  <p class="lead">Il modello ISO/OSI è una struttura a sette livelli che standardizza le funzioni di rete. Le socket operano al livello di trasporto, consentendo la comunicazione tra applicazioni attraverso la rete.</p>
+
+  <div class="row">
+    <!-- Sezione: Modello ISO/OSI -->
+    <div class="col-md-6">
+      <h2>Il Modello ISO/OSI</h2>
+      <p>Il modello OSI è diviso in sette livelli:</p>
+      <ol>
+        <li><strong>Fisico:</strong> Trasmissione di segnali grezzi attraverso i media.</li>
+        <li><strong>Collegamento dati:</strong> Controllo degli errori e gestione dei frame.</li>
+        <li><strong>Rete:</strong> Instradamento dei dati (es. IP).</li>
+        <li><strong>Trasporto:</strong> Garantisce una comunicazione affidabile (es. TCP/UDP).</li>
+        <li><strong>Sessione:</strong> Gestione delle connessioni tra applicazioni.</li>
+        <li><strong>Presentazione:</strong> Formattazione e crittografia dei dati.</li>
+        <li><strong>Applicazione:</strong> Interfaccia utente e protocolli (es. HTTP, FTP).</li>
+      </ol>
+      <img src="img/Osi-model_italia-2356114862.png" alt="Schema del Modello OSI" class="img-fluid my-3">
+    </div>
+
+    <!-- Sezione: Socket e OSI -->
+    <div class="col-md-6">
+      <h2>Socket e il Modello OSI</h2>
+      <p>Le socket operano principalmente al livello 4 (Trasporto) del modello OSI, interfacciandosi con i protocolli TCP e UDP per fornire servizi di comunicazione. Sono utilizzate per:</p>
+      <ul>
+        <li>Creare connessioni affidabili tra dispositivi.</li>
+        <li>Gestire il flusso di dati tra applicazioni.</li>
+        <li>Supportare sia il modello client-server che peer-to-peer.</li>
+      </ul>
+      <p>Le applicazioni che utilizzano le socket sfruttano i livelli superiori (Sessione e Applicazione) per offrire servizi user-friendly, come il web browsing e la posta elettronica.</p>
+      <img src="img/stream-socket-connessione-1867055202.png" alt="Schema del funzionamento delle Socket" class="img-fluid my-3">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-5 text-center">
+  <p>&copy; 2024 - Buoso Mattia - 5E</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+{
+  "doctype": "html",
+  "lang": "",
+  "head": {
+    "meta": [
+      { "charset": "utf-8" },
+      { "name": "viewport", "content": "width=device-width, initial-scale=1" }
+    ],
+    "title": "How To Socket?",
+    "stylesheets": [
+      "css/style.css",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    ]
+  },
+  "body": {
+    "navbar": {
+      "brand": {
+        "text": "SOCKET.",
+        "href": "index.html",
+        "class": "fw-bold"
+      },
+      "links": [
+        { "text": "Cos'è una Socket?", "href": "#", "active": true },
+        { "text": "OSI", "href": "osi.html" },
+        { "text": "TCP vs UDP", "href": "tcp.html" },
+        { "text": "Glossario", "href": "glossario.html" }
+      ]
+    },
+    "main": {
+      "header": {
+        "title": "Introduzione alle Socket",
+        "description": "Le socket sono strumenti chiave nell'ambito della programmazione di rete, consentendo la comunicazione tra dispositivi attraverso protocolli standardizzati come TCP e UDP."
+      },
+      "sections": [
+        {
+          "id": "cosa-e-socket",
+          "title": "Cos'è una Socket?",
+          "content": [
+            "Le socket sono un'interfaccia di programmazione che permette a un'applicazione di inviare e ricevere dati attraverso una rete.",
+            "Immagina una socket come un tubo virtuale: ogni estremità è configurata con un indirizzo IP e una porta.",
+            "L'utilizzo delle socket è alla base di applicazioni come browser web, client di posta elettronica e giochi online."
+          ]
+        },
+        {
+          "id": "tipi-di-socket",
+          "title": "Tipi di Socket",
+          "types": [
+            {
+              "type": "Stream Socket (TCP)",
+              "description": "Connessione affidabile con controllo di errore e ordine garantito."
+            },
+            {
+              "type": "Datagram Socket (UDP)",
+              "description": "Comunicazione veloce ma senza garanzie di affidabilità o ordine."
+            },
+            {
+              "type": "Raw Socket",
+              "description": "Lavoro diretto sui pacchetti per massimo controllo."
+            },
+            {
+              "type": "Multicast Socket",
+              "description": "Trasmissione a più destinatari simultaneamente."
+            }
+          ]
+        },
+        {
+          "id": "modello-osi",
+          "title": "Modello OSI e Socket",
+          "content": [
+            "Il modello OSI divide la comunicazione in rete in sette livelli.",
+            "Le socket operano principalmente al livello di trasporto.",
+            "Comprendere come le socket interagiscono con i livelli OSI è essenziale per progettare sistemi robusti."
+          ]
+        }
+      ],
+      "grid": [
+        {
+          "label": "Cos'è una Socket?",
+          "href": "#cosa-e-socket",
+          "class": "btn btn-primary"
+        },
+        {
+          "label": "Tipi di Socket",
+          "href": "#tipi-di-socket",
+          "class": "btn btn-success"
+        },
+        {
+          "label": "Modello OSI",
+          "href": "#modello-osi",
+          "class": "btn btn-warning"
+        }
+      ]
+    },
+    "footer": {
+      "text": "© 2024 - Buoso Mattia - 5E"
+    },
+    "scripts": [
+      "js/app.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    ]
+  }
+}
